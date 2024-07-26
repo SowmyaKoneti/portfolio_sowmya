@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/sow.jpg" alt="" /></span>
+							<!-- <h1 id="title">Sowmya Koneti</h1>
+							<p>Aspired Software Engineer</p> -->
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/sowmya-koneti-138113152/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Hackerrank</span></a></li> -->
+							<li><a href="https://github.com/SowmyaKoneti" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="mailto:sowmyaa.koneti@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Sowmya Koneti</strong></h2>
+								<p>an Aspired Software Engineer<br />
+								</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">More About ME!!</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+				<section id="about" class="three">
+					<div class="container">
+
+						<header>
+							<h2>About Me</h2>
+						</header>
+
+						<p id="about-para">I am <i>Sowmya Koneti</i>, a dedicated Master's student in Computer Science at Saint Louis University. 
+						With a solid foundation in software development, I have hands-on experience with various technologies, frameworks
+						and keen interest in developing efficient and scalable solutions, as demonstrated by my work on various projects.
+						<br>
+						I enjoy participating in coding competitions where I can apply my skills in challenging ways. 
+						Outside of my professional interests, I enjoy playing shuttle, drawing, and listening to music. 
+						I'm always eager to connect with like-minded professionals.
+						</p>
+						<div class="tabs">
+							<p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+							<p  class="tab-link" onclick="opentab('education')">Education</p>
+							<p  class="tab-link" onclick="opentab('experience')">Experience</p>
+						</div>
+						<div class="tab-contents-container">
+						<div class="tab-contents active-tab" id="skills">
+							<div class="skills-container">
+						
+								<div class="skill">Python(DSA)</div>
+								<div class="skill">Java </div>
+								<div class="skill">C language </div>
+								<div class="skill">Next.js </div>
+								<div class="skill">Node.js</div>
+								<div class="skill">React.js</div>
+								<div class="skill">Flask </div>							
+								<div class="skill">HTML</div>
+								<div class="skill">Tailwind CSS</div>
+								<div class="skill">JavaScript</div>
+								<div class="skill">Pandas</div>	
+								<div class="skill">NumPy </div>
+								<div class="skill">SciPy </div>
+								<div class="skill">Matplotlib </div>
+								<div class="skill">Seaborn </div>
+								<div class="skill">scikit-learn</div>
+								<div class="skill">MySQL </div>	
+								<div class="skill">MongoDB </div>					
+								<div class="skill">Git</div>
+								<div class="skill">Jupyter Notebooks</div>
+								<div class="skill">Collab</div>
+								<div class="skill">Visual Studio</div>
+							</div>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li>
+									<span>Saint Louis University</span>
+									<br>
+									<p class="ene">Master's in Computer Science <br> GPA: 3.88</p>
+									
+								</li>
+								<li>
+									<span>JNTUACEK</span>
+									<br>
+									<p class="ene">Bachelor's in Computer Science</p>
+								</li>
+		
+							</ul>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li>
+									<span>July 2024 - Present</span>
+									<br>
+									<p class="ene">Software Engineer Fellow at Headstarter AI</p>
+								</li>
+								<li>
+									<span>Aug 2023 - Sept 2023</span>
+									<br>
+									<p class="ene">Data Analyst at Excelerate</p>
+								</li>
+								<li>
+									<span>Oct 2021 - July 2023</span>
+									<br>
+									<p class="ene">Java Application Developer at IBM</p>
+								</li>
+								<li>
+									<span>Jan 2020 - Mar 2020</span>
+									<br>
+									<p class="ene">Python intern at cppsecrets.com</p>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<script>
+						var tablinks=document.getElementsByClassName("tab-link");
+						var tabcontents=document.getElementsByClassName("tab-contents");
+						function opentab(tabname){
+							for(i of tablinks){
+								i.classList.remove("active-link");
+							}
+							for(i of tabcontents){
+								i.classList.remove("active-tab");
+							}
+							event.currentTarget.classList.add("active-link");
+							document.getElementById(tabname).classList.add("active-tab");
+						}
+					</script>
+				</section>
+
+				
+
+				<!-- Projects -->
+				<section id="portfolio" class="six">
+					<div class="container">
+
+						<header>
+							<h2>Projects</h2>
+						</header>
+						<div class="features">
+							<article class="project-item">
+								<img src="images/image.png" alt="University Chatbot" class="project-image">
+								<div class="project-info">
+									<h3>University Chatbot</h3>
+									<p>Used Technologies: <i>Python, Flask, PyTorch, NLTK, JavaScript, HTML, CSS</i></p>	
+								</div>
+							</article>
+							<article class="project-item">
+								<img src="images/portfolio.jpg" alt="Portfolio" class="project-image">
+								<div class="project-info">
+									<h3>Portfolio</h3>
+									<p>Used Technologies: <i>JavaScript, HTML, CSS, and Bootstrap</i></p>
+								</div>
+							</article>
+							<article class="project-item">
+								<img src="images/collab.png" alt="Collaborative Whiteboard" class="project-image">
+								<div class="project-info">
+									<h3>Collaborative Whiteboard</h3>
+									<p>Used Technologies: <i>JavaScript, HTML, CSS, React.js, Node.js, Express.js, Redis, Socket.io</i></p>
+								</div>
+							</article>
+							<article class="project-item">
+								<img src="images/book.jpg" alt="Sed magna finibus" class="project-image">
+								<div class="project-info">
+									<h3>Online Book store</h3>
+									<p>Used Technologies: <i>JavaScript, HTML, CSS</i></p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<!-- Contact -->
+					<section id="contact" class="seven">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
