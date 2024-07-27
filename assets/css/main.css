@@ -263,12 +263,11 @@ input, select, textarea {
 	color: #222629;
 	line-height: 35px;
 }
-
 .features {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-	justify-content: center;
+    justify-content: center;
 }
 
 .project-item {
@@ -285,8 +284,15 @@ input, select, textarea {
 .project-image {
     width: 100%;
     height: 100%;
+	border-radius: 10px;
     object-fit: cover; /* Ensure the image covers the container */
     display: block;
+    box-shadow: 0 4px 8px rgba(100, 98, 98, 0.3); /* Add shadow for depth */
+    transition: box-shadow 0.3s ease;
+}
+
+.project-item:hover .project-image {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
 }
 
 .project-info {
@@ -297,7 +303,7 @@ input, select, textarea {
     height: 100%; /* Ensure the info covers the entire container */
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
-    padding: 10px;
+    padding: 20px; /* Increase padding if needed */
     box-sizing: border-box;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -307,6 +313,8 @@ input, select, textarea {
     align-items: center; /* Center content horizontally */
     text-align: center; /* Center align text */
     overflow: hidden; /* Hide overflow */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional shadow for info */
 }
 
 .project-item:hover .project-info {
@@ -315,15 +323,17 @@ input, select, textarea {
 
 .project-info h3 {
     font-size: 1.5em; /* Adjust size as needed */
-    margin-bottom: 10px;
-	color: rgb(231, 223, 223);
-	font-weight: 600;
+    margin: 15px 0; /* Adjust margin as needed */
+    color: rgb(231, 223, 223);
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
 }
 
 .project-info p {
     font-size: 0.7em; /* Adjust size as needed */
-    margin-bottom: 10px;
+    margin: 10px 0; /* Adjust margin as needed */
     line-height: 1.4; /* Improve readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
 }
 
 .content {
@@ -1921,14 +1931,14 @@ header h2 {
 		}
 
 		.image.avatar48 {
-			width: 48px;
-			height: 48px;
-			background: #f00;
+			width: 55px;
+			height: 55px;
+			/* background: #f00; */
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: 55px;
+				height: 55px;
 			}
 
 		.image.fit {
