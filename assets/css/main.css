@@ -287,12 +287,15 @@ input, select, textarea {
 	border-radius: 10px;
     object-fit: cover; /* Ensure the image covers the container */
     display: block;
-    box-shadow: 0 4px 8px rgba(100, 98, 98, 0.3); /* Add shadow for depth */
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(100, 98, 98, 0.3), 
+                0 8px 16px rgba(100, 98, 98, 0.2); /* Add realistic shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .project-item:hover .project-image {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 
+	0 12px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+transform: translateY(-5px);
 }
 
 .project-info {
@@ -314,7 +317,7 @@ input, select, textarea {
     text-align: center; /* Center align text */
     overflow: hidden; /* Hide overflow */
     border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional shadow for info */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Optional shadow for info */
 }
 
 .project-item:hover .project-info {
@@ -322,12 +325,11 @@ input, select, textarea {
 }
 
 .project-info h3 {
-    font-size: 1.5em; /* Adjust size as needed */
-    margin: 15px 0; /* Adjust margin as needed */
+    font-size: 1.5em; 
+    margin: 15px 0; 
     color: rgb(231, 223, 223);
     font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
-}
+    }
 
 .project-info p {
     font-size: 0.7em; /* Adjust size as needed */
@@ -357,10 +359,11 @@ header h2 {
 .tab-link{
 	margin-right:50px ;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 	cursor: pointer;
 	position: relative;
-}
+	color: #625454;
+	}
 
 .tab-link::after{
 	content: '';
@@ -426,13 +429,13 @@ header h2 {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); 
     transition: background-color 0.3s ease;
 }
 
 .skill:hover {
     background-color: #d0d0d0;
 }
-
 
 /* Row */
 
@@ -1931,14 +1934,15 @@ header h2 {
 		}
 
 		.image.avatar48 {
-			width: 55px;
-			height: 55px;
+			width: 80px;
+			height: 80px;
 			/* background: #f00; */
 		}
 
 			.image.avatar48 img {
-				width: 55px;
-				height: 55px;
+				width: 100%; /* Make image fit the container */
+				height: 100%;
+				border-radius: 50%;
 			}
 
 		.image.fit {
@@ -2053,11 +2057,15 @@ header h2 {
 	form input[type="email"],
 	form input[type="password"],
 	form select {
-		line-height: 1.25em;
+		line-height: 1em;
 	}
 
 	form textarea {
-		min-height: 14em;
+		min-height: 8em;
+	}
+	form{
+		padding-left: 120px;
+		padding-right: 120px;
 	}
 
 	form ::-webkit-input-placeholder {
@@ -2272,33 +2280,16 @@ header h2 {
 
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
+		margin: 1.5em 1.5em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
+		display: flex;
+    align-items: end; 
+    justify-content: right; 
 	}
 
-		#logo h1 {
-			position: relative;
-			color: #fff;
-			font-weight: 600;
-			font-size: 1em;
-			line-height: 1em;
-		}
+		
 
-		#logo p {
-			position: relative;
-			display: block;
-			font-size: 0.6em;
-			color: rgba(255, 255, 255, 0.5);
-			line-height: 1.25em;
-			margin: 0.5em 0 0 0;
-		}
-
-		#logo .image {
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
 
 	#nav ul {
 		list-style: none;
@@ -2436,18 +2427,6 @@ header h2 {
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
-			}
-
-			#main > section.five {
-				background-color: #e8edec;
-			}
-
-			#main > section.six {
-				background-color: #e8edec;
-			}
-
-			#main > section.seven {
 				background-color: #e8edec;
 			}
 
